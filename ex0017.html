@@ -12,7 +12,7 @@
         <p>
             <label for="iano">em que ano voice nasceu?</label>
             <input type="number"name="ano" id="iano" min="1900" max="2025"
-            oninput="calcPPpPdade ()">
+            oninput="calcIdade()">
         </p>
 
         <p>
@@ -28,9 +28,9 @@
     </form>
 
     <script>
-        function calcidade() {
-            let atual = new date().getfullyear()
-            iidade.innerHTML =Number(atual)-Number(iano.value)
+        function calcIdade() {
+            let atual =new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
         }
     </script>
     
