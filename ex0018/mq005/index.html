@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>midia query</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
      <link rel="stylesheet" href="estilos/style.css">
+     <link rel="stylesheet" href="estilos/medias-query.css">
 </head>
-<body>
+<body onresize="mudou tamanho()">
     <header>
         <h1>meu site</h1>
-        <span  class="material-symbols-outlined"onclick="clickMenu()">menu </span>
+        <i id="burguer" class="Material-icons" onclick="clickMenu()">menu</i>
  
         <menu id="itens">
             <ul>
@@ -37,11 +37,25 @@
         </article>
     </main>
     <script>
+        function mudoutamanho () {
+            if(window.innerWidth >= 768) {
+                intens.style.dispaly = 'block'
+            } else {
+                itens.style.dispaly = 'none'
+            }
+        }
+
+
         function clickMenu() {
-            itens.style.display ='block'
+            if (itens.style.dispaly == 'block') {
+                itens.style.dispaly = 'none'
+            } else {
+                itens.style.dispaly = 'block'
+            }
         }
             
     </script>
     
 </body>
+
 </html>
