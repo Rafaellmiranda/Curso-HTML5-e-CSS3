@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         div.conteiner {
-            background-color:blue;
+            background-color:lightsalmon;
             display: flex;
             flex-flow: row nowrap;
             
@@ -14,26 +14,40 @@
 
         }
         div.item {
-            background-color: rgb(34, 34, 131);
+            background-color:lightskyblue;
             border: 1px solid black;
             text-align: center;
-            
-            
+           
+         
+        }
+        
+        div#cax {
+          
+
+           flex: 1 1 200px;
         }
 
-        
+        div#cxb {
+         
+
+           flex: 1 1 200px;
+        }
+
+        div#cxc {
+          
+
+           flex: 8 1 auto;
+            
+        }
     </style>
     <title>flexible box</title>
 </head>
 <body>
     <div class ="conteiner">
-        <div class="item">outro conteudo</div>
-        <div class="item">B</div>
-        <div class="item">conteudo um pouco maior</div>
-        <div class="item">D</div>
-        <div class="item">conteudo um pouco maior ainda</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item"id="cxa">A</div>
+        <div class="item"id="cxb">B</div>
+        <div class="item"id="cxc">C</div>
+       
     
 </body>
 </html>
